@@ -1,0 +1,11 @@
+Subject:
+Re: NIS: /etc/nsswitch seems (a bit) ignored from /usr/bin/passwd
+ *solved*
+Payload:
+
+
+hi,
+
+nscd was the problem. He cached the local passwd ...
+
+cu denny
