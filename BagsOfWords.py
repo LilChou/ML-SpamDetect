@@ -2,7 +2,7 @@ import os               #get the file from "path"
 import codecs           #open files with different encoding
 import collections, re  #implement bag of words
 import operator         #sort dictionary
-
+import sys
 
 
 #get all files in the directory and save into a list
@@ -13,6 +13,7 @@ def GetFilesFromPath(path):
 #input filename; return dict with words and frequency
 def BagOfWordsFetching(path, filename):
     dic = {}
+    print("filenames: "+filename)
     with codecs.open(path+"/"+filename, "r",encoding='utf-8', errors='ignore') as f:
         lines = f.readlines()
         #get the bag of words from every line
@@ -27,6 +28,7 @@ def BagOfWordsFetching(path, filename):
         dic = t
     f.closed
     return dic
+    
 def EntireDB_BagOfWords(AllFileBOW, file):
     BagsOfWords = sorted(dict(sum(AllFileBOW, collections.Counter())).items(), key=operator.itemgetter(1), reverse=True)
     
@@ -41,16 +43,23 @@ def EntireDB_BagOfWords(AllFileBOW, file):
 def main():
     print('#############################################')
     #Set the path that we're going to find the email contents
-    path = 'CSDMC2010_SPAM/tt'
+    path = 'CSDMC2010_SPAM/'
+    path += sys.argv[1]
+    filenames = []
     filenames = GetFilesFromPath(path)
-    i=0
+    # with open('SpamListTrain.txt') as f:
+    #     lines = f.readlines()
+    #     for line in lines:
+    #         filenames.append(line)
+    # f.closed
+
     AllFileBOW = []
     for filename in filenames:
         dic = BagOfWordsFetching(path, filename)
         AllFileBOW.append(dic)
 
-    BagsOfWords = EntireDB_BagOfWords(AllFileBOW, 'BOW.txt')
-    
+    BagsOfWords = EntireDB_BagOfWords(AllFileBOW, sys.argv[2])
+
     print('+++++++++++++++++++++++++++++++++++++++++++++++++')
     print('#############################################')
     print()
