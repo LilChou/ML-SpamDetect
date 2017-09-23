@@ -1,6 +1,4 @@
-Subject:
 downloaded .jnlp won't open
-Payload:
 > cat /proc/sys/net/ipv6/bindv6only
 > if output is 1 then:
 > echo 0 > /proc/sys/net/ipv6/bindv6only

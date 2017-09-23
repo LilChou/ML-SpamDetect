@@ -1,6 +1,4 @@
-Subject:
 Compositing two movies
-Payload:
 I need to play two movies in sync, compositing them in a custom way. 
 One approach I came up with is to put the movies in QTMovieLayers (Core 
 Animation), and then I can use a Core Image filter for the compositing. 

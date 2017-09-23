@@ -1,6 +1,4 @@
-Subject:
 Re: Opportunistic apt sources?
-Payload:
 On Mon, Apr 19, 2010 at 00:52, Ron Johnson <ron.l.johnson@cox.net> wrote:
 
 > I'd use symlinks, where sources.list points to either sources.list.home,

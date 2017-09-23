@@ -1,6 +1,4 @@
-Subject:
 Re: kernel BUG at filemap.c:843!
-Payload:
 I did more testing with your patch on top of today's CVS, but the patch
 didn't help at all.
 The following is the results of the tests:

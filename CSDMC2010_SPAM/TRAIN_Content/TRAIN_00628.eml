@@ -1,6 +1,4 @@
-Subject:
 [ILUG] Checking that cronjobs actually ran?
-Payload:
 Hi ladies,
 
 I setup a cron job to do a full backup to tape drive there last night, but

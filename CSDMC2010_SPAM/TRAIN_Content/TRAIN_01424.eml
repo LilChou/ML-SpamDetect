@@ -1,6 +1,4 @@
-Subject:
 RE: [Razor-users] Reducing impact from tons of email
-Payload:
 See your /etc/sendmail.cf file, there are a number of methods for limiting
 the number of concurrent sendmail processes, either by load average (I'm
 sure), or concurrency (I think)... I use sendmail anymore (I use qmail) but

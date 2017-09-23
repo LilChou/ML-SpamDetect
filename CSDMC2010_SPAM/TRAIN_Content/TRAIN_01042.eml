@@ -1,6 +1,4 @@
-Subject:
 Re: How do I get the mbr package to do its job quietly?
-Payload:
 On Wed, 7 Apr 2010 13:25:37 -0400 (EDT), Sven Joachim wrote:
 > On 2010-04-07 18:21 +0200, Stephen Powell wrote:
 >> I read the man page for install-mbr, and I can see how to eliminate

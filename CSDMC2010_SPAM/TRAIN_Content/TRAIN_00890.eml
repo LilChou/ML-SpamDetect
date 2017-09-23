@@ -1,6 +1,4 @@
-Subject:
 Re: Installing Sugar in testing
-Payload:
 > Please see [1]. You probably want sucrose-0.86 for now; sucrose-0.88 still
 > has a few problems [2,3] (the fixes got delayed by the recent
 > ries.debian.org outage).

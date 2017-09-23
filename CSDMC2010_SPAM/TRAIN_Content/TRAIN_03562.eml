@@ -1,6 +1,4 @@
-Subject:
 [Webdev] mod_rewrite question
-Payload:
  I'm trying to wrap Zope up behind apache, so I can do VirtualHosts for
 Zope.
 

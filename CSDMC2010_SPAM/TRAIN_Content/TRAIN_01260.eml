@@ -1,6 +1,4 @@
-Subject:
 Re: Capture (for video) what is displayed on the screen
-Payload:
 On Sun, May 09, 2010 at 06:46:20PM +0200, Merciadri Luca wrote:
 > ~$ ffmpeg -f x11grab -s cif -i :0.0 /tmp/out.mpg
 > FFmpeg version r11872+debian_0.svn20080206-18+lenny1, Copyright (c) 2000-2008 Fabrice Bellard, et al.

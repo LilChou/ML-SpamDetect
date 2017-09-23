@@ -1,6 +1,4 @@
-Subject:
 [Spambayes] Ditching WordInfo
-Payload:
 > Yeah, that's exactly what I was doing--I didn't realize I was
 > incurring administrative pickle bloat this way.  I'm specifically
 > trying to make things faster and smaller, so I'm storing individual

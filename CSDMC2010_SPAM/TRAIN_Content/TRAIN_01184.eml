@@ -1,6 +1,4 @@
-Subject:
 Assign keycodes to Copy and Paste
-Payload:
 Are there keycodes for cut, copy and paste? I tried using the
 "obvious" XF86Copy and XF86Paste guesses but those did not work. For
 that matter, where can one find a list of all available codes? I have

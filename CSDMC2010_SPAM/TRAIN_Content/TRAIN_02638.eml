@@ -1,6 +1,4 @@
-Subject:
 Re: How to list packages in various priorities or sections
-Payload:
 On Mon, Apr 05, 2010 at 06:14:42PM -0400, Mike Viau <viaum@sheridanc.on.ca> was heard to say:
 > Both "aptitude search ~pextra ~smisc" and "aptitude search ~pextra search ~smisc" resulted in a list of package which did not necessarily meet both the search patterns specified.
 

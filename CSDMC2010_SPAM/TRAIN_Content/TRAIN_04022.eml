@@ -1,6 +1,4 @@
-Subject:
 [Spambayes] Deployment
-Payload:
 I think one step towards deployment is creating a re-usable tokenizer
 for mail messages.  The current codebase doesn't expose an easy-to-use
 or easy-to-customize tokenizer.

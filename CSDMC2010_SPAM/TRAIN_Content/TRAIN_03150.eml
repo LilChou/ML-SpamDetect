@@ -1,6 +1,4 @@
-Subject:
 Re: 2.6.32-3 does not recognize PATA WD disk...
-Payload:
 This is not a kernel bug, but the way debian uses drivers.  There are
 two different drivers in the kernel now.
 Old ide drivers and newer pata drivers.  Old ide drivers are going to

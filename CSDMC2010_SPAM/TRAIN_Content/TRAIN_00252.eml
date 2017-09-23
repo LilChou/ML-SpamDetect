@@ -1,7 +1,5 @@
-Subject:
 Weird QTKit memory management behavior when using Grand Central
 	Dispatch
-Payload:
 This specific application plays movies in a loop.
 
 There are no problems when I use the following QTMovieDidEndNotification =

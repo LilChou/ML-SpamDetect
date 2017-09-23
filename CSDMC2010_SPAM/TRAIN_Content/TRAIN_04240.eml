@@ -1,6 +1,4 @@
-Subject:
 Re: [ILUG] RH7.3 on Cobalt - the saga continues
-Payload:
 On Tue, Aug 13, 2002 at 06:54:28AM +0100, Anders Holm mentioned:
 > let me guess, you haven't tried the boot parameter root=/dev/hda2 if you
 > are using lilo??

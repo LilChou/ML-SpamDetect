@@ -1,6 +1,4 @@
-Subject:
 Re: [ILUG] socket latency query
-Payload:
 Vincent Cunniffe wrote:
 > Does anyone have any practical experience with high-performance socket 
 > code in C++ under Linux, and is there any speed difference between unix 

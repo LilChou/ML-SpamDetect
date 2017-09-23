@@ -1,6 +1,4 @@
-Subject:
 Daemons
-Payload:
 I have several running daemons  that write some data to files
 What happens with these open files when INIT 6 command  is issued?
 Are these files that are used by daemons deleted? Or are they closed regularly and saved ?

@@ -1,6 +1,4 @@
-Subject:
 Re: [ILUG] hwclock
-Payload:
 > will have problems though if you use Windows, as it will tell wrong time
 > for half the year, and will reset the clock when you boot into it after
 > the change in time (this might be fixed in XP/2000, I don't know).

@@ -1,6 +1,4 @@
-Subject:
 Re: ICMDecompressionSessionDecodeFrame() is not working
-Payload:
 Hi
 
 You need to fill out the ImageDescription before creating the =

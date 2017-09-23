@@ -1,6 +1,4 @@
-Subject:
 [Semi-OT] Accessing gmail from Python
-Payload:
 Does anyone have an example of how to do this?  Google hasn't 
 helped, specifically at telling me what the keyfile and certfile 
 should be.

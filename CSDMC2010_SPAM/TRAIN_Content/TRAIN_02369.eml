@@ -1,6 +1,4 @@
-Subject:
 [Spambayes] understanding high false negative rate
-Payload:
 Here's clarification of why I did:
 
 First test results using tokenizer.Tokenizer.tokenize_headers()

@@ -1,6 +1,4 @@
-Subject:
 Re: Is acroread blind, or ps2pdf dangerous?
-Payload:
 Hi,
 The problem here is that Windows has problems in implementing
 "propper" file locking symantics. On the side of acroread.exe, it

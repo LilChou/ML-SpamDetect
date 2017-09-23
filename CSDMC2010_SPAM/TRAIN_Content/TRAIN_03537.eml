@@ -1,7 +1,5 @@
-Subject:
 aptitude update thinks there are no updates! (solved by deleting 
 	apt/lists)
-Payload:
 Hi all,
 
 After about a fortnight, I tried to update my Debian squeeze desktop,

@@ -1,6 +1,4 @@
-Subject:
 [Spambayes] understanding high false negative rate
-Payload:
 >>>>> "TP" == Tim Peters <tim.one@comcast.net> writes:
 
   >> The false positive rate is 0-3%.  (Finally!  I had to scrub a

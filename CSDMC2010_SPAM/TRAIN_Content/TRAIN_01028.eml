@@ -1,6 +1,4 @@
-Subject:
 alsa-driver rebuild fails with undeclared USB symbol
-Payload:
 I am trying to rebuild the recently posted ALSA driver package for my 
 kernel.  Although I run Red Hat 7.3, I am not using a Red Hat kernel 
 package: my kernel is lovingly downloaded, configured, and built by 

@@ -1,6 +1,4 @@
-Subject:
 [Spambayes] Maybe change X-Spam-Disposition to something else...
-Payload:
 
 I actually like Neale's X-Spam-Disposition header, I just wonder if maybe we
 should choose something with a different prefix than "X-Spam-" so that

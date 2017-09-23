@@ -1,6 +1,4 @@
-Subject:
 Re: Apt problems
-Payload:
 On Wed, Feb 06, 2002 at 04:14:27PM +0100, Matthias Saou wrote:
 > Strange... all my openssh packages don't explicitly requires a version of
 > openssl. What version of openssh do you have? Is it an official Red Hat

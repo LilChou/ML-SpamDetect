@@ -1,6 +1,4 @@
-Subject:
 Re: [SAdev] 2.40: ready for release?
-Payload:
 
 > t/db_based_whitelist.Use of bare << to mean <<"" is deprecated at
 > ../lib/Mail/SpamAssassin/HTML.pm line 1. Use of bare << to mean <<"" is

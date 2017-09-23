@@ -1,6 +1,4 @@
-Subject:
 Re: Oddity ?
-Payload:
 Merle Reinhart wrote:
 > The 'box' shows up if you use xev -rv.  So my guess is that it is there, but just white on white (I'm using the default SL X11 2.3.5).
 

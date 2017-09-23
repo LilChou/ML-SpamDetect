@@ -1,6 +1,4 @@
-Subject:
 Problem with iwl3954 
-Payload:
 I had the dmesg message that I needed use iwllwifi-3945-2 instead
 iwlwifi-3945-1.
 I finded the packege firmware-iwlwifi-0.23~bpo50+1 and installed that

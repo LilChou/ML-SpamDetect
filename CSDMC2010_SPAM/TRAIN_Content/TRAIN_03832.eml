@@ -1,6 +1,4 @@
-Subject:
 Jumpy video after KDE 4.4 upgrade in Squeeze
-Payload:
 I upgraded my Squeeze box to KDE 4.4 about a week ago, and have been 
 contending with jumpy, hesitant video performance ever since. I'm not sure 
 which package to file this bug against; if it helps I'm running an Nvidia 

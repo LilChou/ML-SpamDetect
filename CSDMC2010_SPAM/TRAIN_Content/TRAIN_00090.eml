@@ -1,6 +1,4 @@
-Subject:
 [Spambayes] spambayes package?
-Payload:
 > That has the nasty side effect of placing all .py files in the
 > package.  What about obvious executable scripts (like timtest or
 > hammie)?  How can I keep them out of the package?

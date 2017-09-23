@@ -1,6 +1,4 @@
-Subject:
 Re: [Razor-users] Trivial false-positives
-Payload:
 > 
 > It seems that an email consisting of a single line containg a
 > control-M is detected as spam. 

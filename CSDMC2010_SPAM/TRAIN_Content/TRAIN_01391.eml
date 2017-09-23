@@ -1,6 +1,4 @@
-Subject:
 [Razor-users] Reducing impact from tons of email
-Payload:
 I'm not sure if this is really a razor problem/issue or a sendmail
 problem. Here's the scenario... My mail server is a 150mhz PC funning
 FreeBSD 4.4. Ordinarily, the machine is quite idle; it supports my

@@ -1,7 +1,5 @@
-Subject:
 Re: Re: Authentication unsuccessful relaying from Postfix to
 	Microsoft ESMTP MAIL Service
-Payload:
 > The problem with postfix is that it runs chrooted and the CA
 > certificates are not copied into the chroot.  See #287795¹.
 > 

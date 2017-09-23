@@ -1,6 +1,4 @@
-Subject:
 Re: dash-as-bin-sh
-Payload:
 Wes Garland <wes@page.ca> wrote:
 > 2 - Is there way to detect that a script is running as dash, instead of a
 > shell like Solaris' /bin/sh

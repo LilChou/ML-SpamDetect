@@ -1,6 +1,4 @@
-Subject:
 Re: Tiny terminal text after kernel update
-Payload:
 On Sun, May 23, 2010 at 04:28:55PM -0700, Todd A. Jacobs wrote:
 > After a recent kernel update, my linux terminal is now displaying
 > teeny-tiny text. How do I set the default terminal back to 80x25?

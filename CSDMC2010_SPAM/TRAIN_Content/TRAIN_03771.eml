@@ -1,6 +1,4 @@
-Subject:
 Re: [ILUG] 3c509 & 2.4.19 problems
-Payload:
 You need to run the dos setup program for the 3c509 and turn off plug 'n' play in the card's firmware I think you will find.
 
 Bod

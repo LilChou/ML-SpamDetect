@@ -1,6 +1,4 @@
-Subject:
 [SAtalk] Compile error under Digital Unix
-Payload:
 Hi, I'm trying to build SA under Digital Unix 4.0f and am receiving a
 compile error (and many warnings) for spamc.  The "perl Makefile.PL"
 does OK, but when I do the make, I get this:

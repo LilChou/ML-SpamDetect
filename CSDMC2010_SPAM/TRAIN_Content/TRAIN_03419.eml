@@ -1,6 +1,4 @@
-Subject:
 [qtMovie frameImageAtTime:frameTime] nil w/Flip4Mac
-Payload:
 image = [qtMovie frameImageAtTime:frameTime]
 
 This returns nil for all wmv files even with Flip4Mac installed. Note that

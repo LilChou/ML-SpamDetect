@@ -1,6 +1,4 @@
-Subject:
 Re: auto mounting a partition with nobrowse
-Payload:
 Example code:
 
 #import <Foundation/Foundation.h>

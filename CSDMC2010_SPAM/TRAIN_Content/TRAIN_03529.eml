@@ -1,6 +1,4 @@
-Subject:
 Re: Shutdown problem -- cron job related?
-Payload:
 >> At certain times, seems Friday noontime, I am unable to shutdown the
 >> system. Instead of the usual scripts to killing all processes, unmounting
 >> everything and will now halt, goodby, I get:

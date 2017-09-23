@@ -1,6 +1,4 @@
-Subject:
 installing Lenny packages in Squeeze
-Payload:
 If I were to install a bare-bones Squeeze system, then add Lenny
 repositories and declare Lenny to be the Default-Release in apt.conf,
 can I expect to have many problems installing a full desktop environment

@@ -1,6 +1,4 @@
-Subject:
 GNOME crashes when .xsession file is present.
-Payload:
 If I create an empty (0 length) .xsession or an .xsession file
 containing one line, say, echo hello, world, I get this error when I
 try to log into GNOME.

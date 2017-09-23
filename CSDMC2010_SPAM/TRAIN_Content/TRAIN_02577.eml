@@ -1,6 +1,4 @@
-Subject:
 [Spambayes] all but one testing
-Payload:
 Tim Peters wrote:
 > I've run no experiments on training set size yet, and won't hazard a guess
 > as to how much is enough.  I'm nearly certain that the 4000h+2750s I've been

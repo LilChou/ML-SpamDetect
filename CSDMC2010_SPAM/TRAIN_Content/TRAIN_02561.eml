@@ -1,6 +1,4 @@
-Subject:
 Re: About apt, kernel updates and dist-upgrade
-Payload:
 On Mon, Feb 04, 2002 at 04:53:14PM +0100, Matthias Saou wrote:
 > It skips it. See the /etc/apt/apt.conf file for this.
 

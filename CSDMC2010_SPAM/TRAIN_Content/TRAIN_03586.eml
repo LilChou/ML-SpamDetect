@@ -1,6 +1,4 @@
-Subject:
 Re: asynchronous I/O (was Re: Gasp!)
-Payload:
 Adam Beberg writes:
 > On Tue, 3 Sep 2002, Kragen Sitaker wrote:
 > > Unix acquired nonblocking I/O in the form of select() about 23 years

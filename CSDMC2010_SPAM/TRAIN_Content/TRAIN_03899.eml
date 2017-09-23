@@ -1,6 +1,4 @@
-Subject:
 Re: Why does /dev/rtc0 belong to group audio in Lenny but not in Sid?
-Payload:
 On 2010-05-12 10:06 +0200, Rick Thomas wrote:
 
 > In Lenny, "ls -ld /dev/audio" gives

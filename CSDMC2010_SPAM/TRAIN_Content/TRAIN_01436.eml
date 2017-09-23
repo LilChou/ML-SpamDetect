@@ -1,6 +1,4 @@
-Subject:
 Re: Anolther sequence related traceback
-Payload:
 I have some patches that seem to fix/avoid this problem now.   (It is
 amazing what one can achieve when mains power fails, long enough for
 UPS's to run out, and all that is left operational is the laptop and

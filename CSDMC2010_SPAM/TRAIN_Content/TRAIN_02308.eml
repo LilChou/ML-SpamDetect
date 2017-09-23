@@ -1,6 +1,4 @@
-Subject:
 aptitude and held packages
-Payload:
 I just upgraded apt and aptitude to the latest testing version. Although
 'aptitude -s safe-upgrade' tells me that '172 not upgraded' it no longer
 lists them. Is this a bug or an intentional change?

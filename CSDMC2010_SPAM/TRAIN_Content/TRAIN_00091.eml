@@ -1,6 +1,4 @@
-Subject:
 latest php upgrade in 7.3
-Payload:
 Today an apt-get upgrade holds back php (and submodules, like php-imap). 
   Running an apt-get install php to see what's up, I get:
 

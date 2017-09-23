@@ -1,6 +1,4 @@
-Subject:
 Re: How to flush cache of certain disk?
-Payload:
 >> When I unplug stick, udev unmounts it from mountpoint. Pay attention
 >> to moment of unmount - it happens *after* unplugging, so no cache can
 >> be flushed as far as device is already disconnected.

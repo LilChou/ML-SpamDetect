@@ -1,6 +1,4 @@
-Subject:
 Elliptic Curve Point Counting, made easy
-Payload:
 Here are some numbers with the new algorithm for counting points on
 elliptic curves (over fields of characteristic 2).
 

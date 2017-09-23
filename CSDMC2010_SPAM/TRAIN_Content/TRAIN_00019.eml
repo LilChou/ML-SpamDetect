@@ -1,6 +1,4 @@
-Subject:
 Automating xmodmap keymaps
-Payload:
 Everytime I log into GNOME, I run this command in my home directory.
 
 xmodmap keymaps

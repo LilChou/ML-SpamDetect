@@ -1,6 +1,4 @@
-Subject:
 Re: xterm color
-Payload:
 You are hardcoding the :0 DISPLAY there... you are probably just getting =
 a different one... you should really look into ssh tunneling X11 =
 instead...

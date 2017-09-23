@@ -1,6 +1,4 @@
-Subject:
 Re: Boot / LVM best practices
-Payload:
 >>> If you're going to buy two drives, you'd be stupid to not use
 >>> mirroring for fault tolerance and a little added read performance
 >>> here and there (depends on application).

@@ -1,6 +1,4 @@
-Subject:
 [SAtalk] updating SA
-Payload:
 To update spamassasin, all I need to do is install the new tar.gz 
 file as if it were a new installation? I don't need to stop incoming 
 mail or anything like that? Thanks, Mike

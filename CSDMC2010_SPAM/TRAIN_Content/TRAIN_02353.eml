@@ -1,6 +1,4 @@
-Subject:
 sh command issue
-Payload:
 I'm helping a fella in the UK with a debian build (tiny web) on a small VM
 machine in a data center.  I am trying to compile some c++ code, I have the
 libs and binaries installed and the compile "works", except for this line...

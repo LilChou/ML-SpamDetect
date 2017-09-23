@@ -1,6 +1,4 @@
-Subject:
 Re: KDE 4.4.3 in unstable
-Payload:
 On Thu May 6 2010 15:59:39 Boyd Stephen Smith Jr. wrote:
 > I think that KMail requiring MySQL to function in Debian stable is a
 > problem. I request that the Qt/KDE packaging team take steps to ensure that

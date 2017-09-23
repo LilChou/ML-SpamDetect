@@ -1,6 +1,4 @@
-Subject:
 bbkeys: NextWindow command does not work with java programs
-Payload:
 Package: bbkeys
 Version: 0.9.0-7.1
 Severity: normal

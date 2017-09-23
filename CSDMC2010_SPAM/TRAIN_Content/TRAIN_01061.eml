@@ -1,6 +1,4 @@
-Subject:
 Re: [ILUG] cups question
-Payload:
 zzzz@example.com (Justin Mason) writes:
 
 > /dev/fd/0 is STDIN -- filedescriptor 0.  Looks like the PS file wants

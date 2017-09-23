@@ -1,6 +1,4 @@
-Subject:
 [ILUG] cups question
-Payload:
  I seem to be having a little trouble with it. My printers.conf is:
 
 <DefaultPrinter lp>

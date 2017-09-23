@@ -1,6 +1,4 @@
-Subject:
 Re: problems with 'apt-get -f install'
-Payload:
 I have failed dependencies in RPM database to I am unable to use
 apt-get.  I requests to run 'apt-get -f install' to fix these
 dependencies, however, I get these errors when running 'apt-get -f

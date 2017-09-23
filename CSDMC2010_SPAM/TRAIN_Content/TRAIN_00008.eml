@@ -1,6 +1,4 @@
-Subject:
 Re: RPM's %post, %postun etc
-Payload:
 Have you tried rebuilding your package on a system that has a stock (or
 no) .rpmmacros file? Does it still build (and install/uninstall) the way
 you intended it to?

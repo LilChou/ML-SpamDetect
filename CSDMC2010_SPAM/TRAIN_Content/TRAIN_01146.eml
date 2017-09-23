@@ -1,6 +1,4 @@
-Subject:
 Re: Debian+KDE 4.4.3 (i915 dual screen) (SOLVED)
-Payload:
 
  Xserver has a well known issue with the i915 driver and it's DRI/DRM 
   limitation to 2048x2048 window size. So the default setup is not working 

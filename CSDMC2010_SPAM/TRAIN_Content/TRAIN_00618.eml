@@ -1,6 +1,4 @@
-Subject:
 [ILUG] Tracking NFS users
-Payload:
 
 Lets say we have an nfs server with nfsd running really high load. nfsstat
 will tell you roughly how much traffic is going through with access,

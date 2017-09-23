@@ -1,6 +1,4 @@
-Subject:
 Re: Sorting
-Payload:
 > >  sh -c 'for f in "`folders -recurse -fast`" ; do sortm +"$f" ; done'
 
 > Thanks Tom and Jacob. The above works, but without the double quotes: i.e.

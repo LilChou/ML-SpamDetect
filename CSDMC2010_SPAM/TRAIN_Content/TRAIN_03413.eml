@@ -1,6 +1,4 @@
-Subject:
 Re: Fwd: Re: Kde 3.5 ...
-Payload:
 On Sat May 8 2010 08:25:07 Dotan Cohen wrote:
 > So long as you are not loading Qt3 libraries in addition to the Qt4
 > libraries, KDE 4 is lighter on RAM than KDE 3. You can really feel it,

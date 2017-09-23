@@ -1,6 +1,4 @@
-Subject:
 Re: bad focus/click behaviours
-Payload:
 I've never understood the mouse buffer operation with exmh either. Here's the 
 behaviour I have. I have exmh and XEmacs windows up, and a terminal window. (I 
 also have gnome1.4 running and enlightenment as wm.) I select text in the exmh 

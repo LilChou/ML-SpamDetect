@@ -1,6 +1,4 @@
-Subject:
 Re: How do I transfer file through multiple jumps ssh connections
-Payload:
 On 2010-04-08 20:48, Kaicheng Zhang wrote:
 > Hi there,
 >     I have to ssh to a server A and then ssh to server B where I do my

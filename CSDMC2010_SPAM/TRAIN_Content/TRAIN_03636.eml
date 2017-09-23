@@ -1,7 +1,5 @@
-Subject:
 Re: Re (2): xorg-server failing on IBM NetVista with Intel 82815
  video
-Payload:
 On Wed, 19 May 2010 18:43:41 -0400 (EDT), Peter Easthope wrote:
 > Now in the log there is no (EE) and no /dev/fb0.  
 > This is what appears on the screen after startx is issued.

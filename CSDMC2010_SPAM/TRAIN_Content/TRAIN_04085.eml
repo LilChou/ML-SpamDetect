@@ -1,6 +1,4 @@
-Subject:
 Re: [ILUG] tcpd
-Payload:
 On Sat, Jul 27, 2002 at 11:58:10AM -0700, Paul O'Neil wrote:
 > If I want to use tcpd for ftp and only one user will ever ftp but I dont
 > know what IP that user is because its dialup DHCP how do I setup tcpd for

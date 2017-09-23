@@ -1,6 +1,4 @@
-Subject:
 Re: New Sequences Window
-Payload:
 Well, I've used the check-the-modify-time cache trick for files in
 many places (not just exmh) so some part of me certainly thinks it
 is effective.  However, it occurred to me that if we do checkpoint

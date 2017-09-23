@@ -1,6 +1,4 @@
-Subject:
 Re: [Bug 704] spamd doesn't remove pid file on shutdown when running as non-root user
-Payload:
 bugzilla-daemon@hughes-family.org wrote:
 > http://www.hughes-family.org/bugzilla/show_bug.cgi?id=704
 > ok, this is now fixed. cheers!

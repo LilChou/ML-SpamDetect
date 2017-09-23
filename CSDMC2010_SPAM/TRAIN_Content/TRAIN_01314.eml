@@ -1,6 +1,4 @@
-Subject:
 getting inetd to run leafnode via IPv4
-Payload:
 Some time ago, my slrn stopped being able to talk to my local news
 server, and I'm just now trying to troubleshoot it.  I suspect this has
 a really obvious answer, but because I'm not at all familiar with IPv6,

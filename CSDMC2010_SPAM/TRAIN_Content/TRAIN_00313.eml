@@ -1,6 +1,4 @@
-Subject:
 Re: alsa-driver.spec tweak for homemade kernels
-Payload:
 On Wed, Oct 02, 2002 at 10:45:04PM +0200, Matthias Saou wrote:
 > > So I've attached a patch to specify an alternate kernel by setting the
 > > "TARGET_KERNEL" environment variable before running rpmbuild. You

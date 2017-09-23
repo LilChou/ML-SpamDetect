@@ -1,6 +1,4 @@
-Subject:
 New Clamav-daemon Error
-Payload:
 ~$ sudo /etc/init.d/clamav-daemon start
 Starting ClamAV daemon: clamd ERROR: Unknown group 20 Incorrect number of 
 arguments

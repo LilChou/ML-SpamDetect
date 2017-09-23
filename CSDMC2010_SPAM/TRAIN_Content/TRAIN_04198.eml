@@ -1,6 +1,4 @@
-Subject:
 [ILUG] Re: Problems with RAID1 on cobalt raq3
-Payload:
 On Mon, Aug 19, 2002 at 03:08:16PM +0100, John P. Looney mentioned:
 >  This is likely because to get it to boot, like the cobalt, I'm actually
 > passing root=/dev/hda5 to the kernel, not /dev/md0. 

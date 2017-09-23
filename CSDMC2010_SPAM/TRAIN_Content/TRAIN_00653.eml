@@ -1,6 +1,4 @@
-Subject:
 trouble with TransferMode
-Payload:
 I'm developing a QT app on Windows, and am using a WSH javascript to =
 control output from the application. I have everything working, except I =
 want to make a track blend 50% with the background and it just doesn't =

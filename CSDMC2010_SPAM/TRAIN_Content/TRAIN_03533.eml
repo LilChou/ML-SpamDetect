@@ -1,6 +1,4 @@
-Subject:
 Re: 2.5.0 weirdness
-Payload:
 OK. I have since verified that sometimes I lose focus and sometimes X11 pops
 to the front even when another application is runing. For example, I'm using
 powerpoint, and then...gee, all my xterms. Hello, xterms. But Powerpoint

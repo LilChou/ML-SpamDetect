@@ -1,6 +1,4 @@
-Subject:
 Re: FSEvents errors after the removal of a watched directory
-Payload:
 On May 5, 2010, at 9:12 PM, ext Dominic Giampaolo wrote:
 
 >> - I create a FSEventStream with the right directories to watch

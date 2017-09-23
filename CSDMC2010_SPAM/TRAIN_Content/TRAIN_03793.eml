@@ -1,6 +1,4 @@
-Subject:
 Re: [ILUG] PCTel modules
-Payload:
 On 0020 -0700 %{!Thu, Sep 05, 2002 at  3:17:36PM -0700}, eric nichols wrote:
 > Hello again. I tried all the suggestions for the PCTel driver and at
 > the end of it, everything still goes smoothly until I type "make"

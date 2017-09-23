@@ -1,6 +1,4 @@
-Subject:
 Re: Hi how to escaping under ` ` in sh
-Payload:
 On Wed, Apr 21, 2010 at 2:01 PM, Nick Douma <n.douma@nekoconeko.nl> wrote:
 >>>
 > When using single quotes ('), everything in the string is literal, so no escaping is required. You only need escaping when using double quotes (").

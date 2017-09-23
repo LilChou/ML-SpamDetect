@@ -1,6 +1,4 @@
-Subject:
 [Spambayes] hammie.py vs. GBayes.py
-Payload:
 There seem to be two "drivers" for the classifier now: Neale Pickett's
 hammie.py, and the original GBayes.py.  According to the README.txt,
 GBayes.py hasn't been kept up to date.  Is there anything in there

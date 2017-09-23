@@ -1,6 +1,4 @@
-Subject:
 Re: Kde 3.5 ...
-Payload:
 >> KDE 4.4 is lighter than KDE 3.5 was, even with desktop effects
 >> enabled. The only time you will see it appear that KDE 4 is "heavy" is
 >> if you are loading the Qt3 libraries in addition to the Qt4 libraries,

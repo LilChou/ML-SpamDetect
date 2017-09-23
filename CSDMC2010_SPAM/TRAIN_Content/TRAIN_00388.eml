@@ -1,6 +1,4 @@
-Subject:
 Re: Are bad developer libraries the problem with M$ software?
-Payload:
 No, you need to learn how declarations work in C.  You have specified
 testbuff as "an array of 1024 pointers to characters".  That means,
 you have allocated an array big enough to store 1024 pointers.  On

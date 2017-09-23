@@ -1,6 +1,4 @@
-Subject:
 Re: Lenny to Squeeze upgrade problems
-Payload:
 On 05/12/2010 04:16 PM, Boyd Stephen Smith Jr. wrote:
 > On Wednesday 12 May 2010 16:04:07 Jordan Metzmeier wrote:
 >> This issue is because the new udev requires a>  .31 kernel with

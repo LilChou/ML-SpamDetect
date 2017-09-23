@@ -1,6 +1,4 @@
-Subject:
 Processes Run at Nice 19!
-Payload:
 I still have not gotten to the root of this very annoying problem.
 
 In the earliest KDE4 versions, stuff started up at the normal default nice of 

@@ -1,6 +1,4 @@
-Subject:
 Re: supporting Get Info "Locked" checkbox in a file system driver
-Payload:
 The lock bit comes into a VFS as the UF_IMMUTABLE flag.  See man chflags
 
 On Apr 23, 2010, at 3:02 PM, mogambo wrote:

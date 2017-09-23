@@ -1,6 +1,4 @@
-Subject:
 Re: Problems with JNI included in a JNLP on Mac OS X
-Payload:
 Mike Swingler wrote:
 
 > Your class is scoped under a JNLP-specifc ClassLoader: using the =

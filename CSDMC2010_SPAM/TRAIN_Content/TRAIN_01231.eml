@@ -1,6 +1,4 @@
-Subject:
 Will AMD64 Install on my PC???
-Payload:
 1. Here is my cpuinfo:
 
 root@Ni:/home/franx# cat /proc/cpuinfo 

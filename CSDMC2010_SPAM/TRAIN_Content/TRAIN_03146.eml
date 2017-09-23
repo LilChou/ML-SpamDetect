@@ -1,6 +1,4 @@
-Subject:
 Bindings problem with current CVS code
-Payload:
 I've had this binding in my ~/.exmh/exmhbindings for years:
 
 set {bindings(key,Flist_FindUnseen 1 ; Inc_PresortFinish)} <Key-f>

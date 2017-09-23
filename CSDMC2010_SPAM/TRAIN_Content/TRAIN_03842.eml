@@ -1,6 +1,4 @@
-Subject:
 Re: Bluetooth and runloops in a dedicated thread.
-Payload:
 > I have an old project that I am restarting, and under Snow Leopard it is
 > broke. The problem didn't have a well documented solution in older OSes. =
 I

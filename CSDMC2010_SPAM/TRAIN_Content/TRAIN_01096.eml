@@ -1,6 +1,4 @@
-Subject:
 MovieAudioExtractionFillBuffer calling exit?
-Payload:
 I'm running QuickTime on Windows (XP SP3) and have a reproducible way to
 make MovieAudioExtractionFillBuffer in a C++ program do something strange.
 It looks like it's calling exit() or doing something equivalent, but I can't

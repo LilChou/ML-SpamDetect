@@ -1,6 +1,4 @@
-Subject:
 Re: [ILUG] packaging risks and the reputation of linux distributions
-Payload:
 Brendan Kehoe wrote:
 > As a workaround, the various distributions could use a GPG singature to verify 
 > correctness of the file.  Since the distributor's secret key is required to 

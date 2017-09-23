@@ -1,6 +1,4 @@
-Subject:
 buffer overflows
-Payload:
 Didn't we just have a discussion on FoRK how hard
 it is nowadays to write something that's not
 buffer overflow protected? 

@@ -1,7 +1,5 @@
-Subject:
 Re: passwordless ssh root logins stopped working after testing
  dist-upgrade
-Payload:
 Hello Russel,
 
 I am suspecting an issue on the server side.

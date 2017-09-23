@@ -1,6 +1,4 @@
-Subject:
 Re: Mouse/Keyboard "Hook"?
-Payload:
 On Thu, Apr 29, 2010 at 2:56 PM, Luke Scott <luke@cywh.com> wrote:
 > I'm trying to make a program in C/C++ that blocks the mouse and keyboard
 > events on the local system (as if they didn't happen) and send them to

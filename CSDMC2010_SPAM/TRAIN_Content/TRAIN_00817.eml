@@ -1,6 +1,4 @@
-Subject:
 Re: [SAtalk] PerMsgStatus.pm error?
-Payload:
 It's possible...I performed the update via "rpm -U"...which, of course, 
 created all the new rulesets as "xx_rulename.cf.rpmnew"  Crud.  I'll have 
 to start moving things around.

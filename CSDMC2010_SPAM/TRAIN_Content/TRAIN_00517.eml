@@ -1,6 +1,4 @@
-Subject:
 Re: use new apt to do null to RH8 upgrade?
-Payload:
 > Matthias Saou (matthias@egwn.net) wrote*:
 > >As Red Hat does, I really don't recommend trying to upgrade between betas
 > >or from a beta to a final release either. Simply backup your /home, /etc

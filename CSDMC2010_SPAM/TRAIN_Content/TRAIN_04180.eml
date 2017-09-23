@@ -1,6 +1,4 @@
-Subject:
 Java Web Start Offline Problems
-Payload:
 In recent Java versions, there is a regression that prevents Java Web =
 Start applications from launching if there is no internet connection, =
 even if they have <offline-allowed/> attribute.  Launching without an =

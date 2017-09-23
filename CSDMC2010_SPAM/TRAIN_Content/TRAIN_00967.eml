@@ -1,6 +1,4 @@
-Subject:
 Re: K3B
-Payload:
 > `athalon-redhat-linux': machine `athalon-redhat' not recognized
 > configure: error: /bin/sh admin/config.sub athalon-redhat-linux failed
 > error: Bad exit status from /home/dale/rpmbuild/tmp/rpm-tmp.26673

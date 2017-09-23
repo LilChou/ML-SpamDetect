@@ -1,6 +1,4 @@
-Subject:
 aptitude stuck
-Payload:
 Today's run of 'aptitude -s safe-upgrade' had been running for over an
 hour and was using half my memory when I killed it. The status line was:
 

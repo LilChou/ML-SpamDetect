@@ -1,6 +1,4 @@
-Subject:
 Exmh/nmh (was Sorting)...
-Payload:
 > I am facing the fact that exmh has been left behind in some industry
 > standards.  I use it for my personal mail.  My mail server runs unix,
 > and I connect over ssh and tunnel my X traffic over ssh.  With a slow

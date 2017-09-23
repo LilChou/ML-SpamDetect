@@ -1,6 +1,4 @@
-Subject:
 [Spambayes] can't write to CVS...
-Payload:
 I'm listed as a developer on SF and have the spambayes CVS module checked
 out using my SF username, but I'm unable to write to the repository.  CVS
 complains:

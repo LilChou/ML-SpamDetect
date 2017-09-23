@@ -1,6 +1,4 @@
-Subject:
 QuickTime plugin in Mobile Safari
-Payload:
 I'm trying to use JavaScript and the QuickTime PlugIn to play a movie 
 on the iPad but keep getting a broken movie icon and 
 GetPluginStatus() returns "Error: -12939". Also, the browser debug 

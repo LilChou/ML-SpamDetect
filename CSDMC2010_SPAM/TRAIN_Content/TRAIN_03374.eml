@@ -1,6 +1,4 @@
-Subject:
 [Razor-users] Re: Content-Type: message/rfc822  supported ?
-Payload:
   For what you're trying to do, forwarding does not work.
   'bounce' works perfectly, if you can do that.
   Another option is to save spam to a folder and report 

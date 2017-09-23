@@ -1,7 +1,5 @@
-Subject:
 Re: Don't be too quick to assume that -XX:+UseCompressedOops is a
  good 	thing
-Payload:
 On 27/04/2010 02:30, Benson Margulies wrote:
 > A quick benchmark of some CPU-intensive code of ours shows a quite marked
 > slowdown with that option turned on.

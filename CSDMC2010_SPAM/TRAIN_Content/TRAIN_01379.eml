@@ -1,6 +1,4 @@
-Subject:
 Re: Minor whoops with glimpse support
-Payload:
 There are some cases like this with "incomplete ftoc".  These are surely old
 bugs that appeared after I added the ability to only scan the tail of the ftoc
 if for some reason the scan module decides it cannot easily merge the newly

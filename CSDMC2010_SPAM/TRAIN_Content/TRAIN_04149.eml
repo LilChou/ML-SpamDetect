@@ -1,6 +1,4 @@
-Subject:
 RE: DataPower announces XML-in-silicon
-Payload:
 If it's not stateful, it wouldn't seem to be worth the effort, although I guess it might help with DDoS attacks.
 
 Sounds snake-oilish to me, but I'm biased by lots of experience with firewalls and proxy servers, and the limitations thereof.

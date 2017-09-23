@@ -1,6 +1,4 @@
-Subject:
 LXDE session aborting immediately.
-Payload:
 Well, not really, but that is what the message says.  Actually, it says that the session lasted less than ten seconds, but who's counting.
 
 This started happening last Monday night after doing a full-upgrade on my laptop, running Squeeze.

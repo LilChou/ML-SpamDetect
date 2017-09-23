@@ -1,7 +1,5 @@
-Subject:
 Re: Authentication unsuccessful relaying from Postfix to
 	Microsoft ESMTP MAIL Service
-Payload:
 On Thu, 13 May 2010 11:59:20 +0100, Clive Standbridge wrote:
 
 > The attachments contain the lines written to /var/log/auth.log and

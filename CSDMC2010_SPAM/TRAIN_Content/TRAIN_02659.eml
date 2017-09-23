@@ -1,6 +1,4 @@
-Subject:
 Re: [Razor-users] Stripping the SpamAssassin report
-Payload:
 At 12:20 PM -0500 8/13/02, Mike Burger wrote:
 >Make sure you have this in your .spamassassin/user_prefs:
 

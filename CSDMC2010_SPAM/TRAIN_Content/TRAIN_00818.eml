@@ -1,6 +1,4 @@
-Subject:
 Re: No CORE DUMP.
-Payload:
 Thanks !!! this worked.
 I did
  ulimit -c unlimited.

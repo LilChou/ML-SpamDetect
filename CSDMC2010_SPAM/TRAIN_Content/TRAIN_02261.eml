@@ -1,6 +1,4 @@
-Subject:
 Re: Kernel (de)bug information sent, even if there is no connection
-Payload:
 On Sat, 24 Apr 2010 22:57:27 +0200, Merciadri Luca wrote:
 
 > This looks like kerneloops sends the oopses through a simple URL.

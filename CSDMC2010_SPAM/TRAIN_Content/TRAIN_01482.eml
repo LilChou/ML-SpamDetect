@@ -1,6 +1,4 @@
-Subject:
 Re: Aptitude Error
-Payload:
 On Fri, Apr 30, 2010 at 12:54:57PM -0500, "Boyd Stephen Smith Jr." <bss@iguanasuicide.net> was heard to say:
 > My instinct is that '-t $something' effectively increases the priority of all 
 > packages from the $something repository, which may make the dependency 

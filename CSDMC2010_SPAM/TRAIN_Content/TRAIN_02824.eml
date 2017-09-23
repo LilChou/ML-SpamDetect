@@ -1,6 +1,4 @@
-Subject:
 [Spambayes] Deployment
-Payload:
 > > - A program that acts both as a pop client and a pop server.  You
 > >   configure it by telling it about your real pop servers.  You then
 > >   point your mail reader to the pop server at localhost.  When it

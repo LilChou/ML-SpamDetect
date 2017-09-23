@@ -1,6 +1,4 @@
-Subject:
 Suspend to Disk + blacklisted module = still trouble
-Payload:
 hello,
 
 I am having problems with the uvcvideo module (driver for webcam)

@@ -1,6 +1,4 @@
-Subject:
 Re: Is Firefox/Iceweasel leaking?
-Payload:
 On Fri, 07 May 2010 19:58:26 +0200 Merciadri Luca wrote:
 > I noticed on many computers with Debian, whatever the kernel
 > (2.6.xx, xx >= 26), that, once ``too much'' tabs have been opened,

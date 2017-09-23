@@ -1,6 +1,4 @@
-Subject:
 RE: [Razor-users] New to razor
-Payload:
 I concur, but just ignore the razor errors during the make test of
 spamassassin.  That recently started failing but appears just to be the
 test failing.  

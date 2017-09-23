@@ -1,6 +1,4 @@
-Subject:
 Re: [Razor-users] What's wrong with the Razor servers now?
-Payload:
 except that the server doesn't know you are the same person that reported
 the spam, since the identity isn't checked (at least not required, so i
 assume it's not checked) when doing a razor-check

@@ -1,6 +1,4 @@
-Subject:
 Re: recompiling the kernel with a different version name
-Payload:
 On Wed, 7 Apr 2010 13:17:30 -0400 (EDT), Lorenzo Bettini wrote:
 > I tried also with --revision, e.g.,
 > 

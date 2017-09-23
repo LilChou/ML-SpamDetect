@@ -1,6 +1,4 @@
-Subject:
 apt-get dist-update failure - can't boot
-Payload:
 After doing a apt-get dist-update and restarting the pc because of some 
 errors I'm getting the problem as show in the image.
 

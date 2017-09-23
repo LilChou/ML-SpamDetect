@@ -1,6 +1,4 @@
-Subject:
 Re: ICMCompressionSession question
-Payload:
 >> I have no idea what that's supposed to mean. You'd use a =
 decompression session and do whatever you want with the pixel buffers it =
 gives you. Why do you think you can't?

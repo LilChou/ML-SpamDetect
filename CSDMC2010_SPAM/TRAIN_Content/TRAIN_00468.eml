@@ -1,6 +1,4 @@
-Subject:
 Re: exmh bug?
-Payload:
 
 Gotta wonder what the GPG config stuff in ~/.exmh/exmh-defaults looks 
 like.  Also gotta wonder what the message headers in the offending 

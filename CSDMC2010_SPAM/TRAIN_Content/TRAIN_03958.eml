@@ -1,6 +1,4 @@
-Subject:
 Re: Compositing two movies
-Payload:
 I can verify that these calls do actually work for synchronization. I =
 grab the master time base of the movie I am considering the master =
 (which can be arbitrary, so just pick one) and set the master time base =

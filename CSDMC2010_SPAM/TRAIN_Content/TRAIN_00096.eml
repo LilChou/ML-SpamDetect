@@ -1,6 +1,4 @@
-Subject:
 Re: gentoo 0.11.31 relased...
-Payload:
 ..it's a major release and supports now SGI's FAM technology
 (see http://www.oss.sgi.com/projects/fam/), meaning gentoo will
 now be aware of changes made to the directories it's viewing.

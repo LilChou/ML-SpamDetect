@@ -1,6 +1,4 @@
-Subject:
 JFormattedTextField backspace issue in 6u20 + 5u24
-Payload:
 I'm using Leopard, so I'm not sure if this also applies to Snow Leopard.
 
 Run any of the JFormattedTextField demos here (web start is fine):

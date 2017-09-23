@@ -1,6 +1,4 @@
-Subject:
 Re: 2.5.0 weirdness
-Payload:
 If there is something new to 2.5.0, then it is a different issue.  The =
 issue as described in bug #58 is known, and the problem certainly lies =
 outside of X11.  I am suspicious of claims that something "new" in this =

@@ -1,6 +1,4 @@
-Subject:
 Alternative to dhcp?
-Payload:
 I edited /etc/resolv.conf to add a nameserver, edited /etc/dhcp3/dhclient.conf 
 to do the same and added the dns to wicd.  However, I keep getting the same 
 old dns from the router, i.e., resolv.conf keeps changing to the router's 192 

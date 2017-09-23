@@ -1,7 +1,5 @@
-Subject:
 Re: differences between NSWorkspace unmountAndEjectDeviceAtURL and
 	unmountAndEjectDeviceAtPath
-Payload:
 The system call works.
 
 As does the call to FSEjectVolumeSync(), which surprised me, since I =

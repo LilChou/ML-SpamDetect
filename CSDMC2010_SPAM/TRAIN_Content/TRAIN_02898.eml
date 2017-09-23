@@ -1,6 +1,4 @@
-Subject:
 Re: Asynchronous load fail with i386 build in a cmd line tool
-Payload:
 > 
 >> If I try to create my QTMovie object on a secondary thread, I get the
 >> following exception :

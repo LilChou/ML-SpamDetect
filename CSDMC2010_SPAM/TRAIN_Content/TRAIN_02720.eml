@@ -1,6 +1,4 @@
-Subject:
 Re: nvidia legacy driver//kernel 2.6.32 issues
-Payload:
 On Tuesday 06 April 2010 12:02:12 Stephen Powell wrote:
 > On Tue, 6 Apr 2010 10:46:35 -0400 (EDT), Francesco Pietra wrote:
 > > Following "apt-get dist-upgrade" with debian squeeze i386, upgrading

@@ -1,6 +1,4 @@
-Subject:
 Re: RH 8 no DMA for DVD drive
-Payload:
 On Sun, 2002-10-06 at 21:17, Alvie wrote:
 > hdparm -d1 /dev/hdc says Operation not Permitted.
 > DVD playback is very jumpy.

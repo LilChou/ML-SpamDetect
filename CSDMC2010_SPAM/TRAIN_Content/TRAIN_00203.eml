@@ -1,6 +1,4 @@
-Subject:
 Re: only output the nth line
-Payload:
 On Wed May 12 2010 09:58:57 Jozsi Vadkan wrote:
 > sed -n '1,2p;4p' file.txt
 >

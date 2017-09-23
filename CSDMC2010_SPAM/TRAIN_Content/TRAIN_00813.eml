@@ -1,6 +1,4 @@
-Subject:
 Securing multiple virtual hosts
-Payload:
 I am trying to secure three of four virtual hostnames on our Apache server.
 We are not taking credit card orders or user's personal information, but are
 merely hoping to secure email and calendar web transactions for our users.

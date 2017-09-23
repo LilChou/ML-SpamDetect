@@ -1,7 +1,5 @@
-Subject:
 Re: nslookup from Windows resolves domain and pdc correctly but still 
 	gets cannot contact on samba 3.2.5-4 on lenny
-Payload:
 On Wed, Apr 28, 2010 at 7:50 AM, Siju George <sgeorge.ml@csmining.org> wrote:
 >
 > I have installed

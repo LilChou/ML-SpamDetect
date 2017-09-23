@@ -156,6 +156,7 @@ def main():
 	print('++++++++++++++++++++++++++++++++++++++++++')
 	# print(TrainSetFileNames)
 	# print(SpamList)
+	# print(type(SpamList))
 	# print(SpamBOW)
 	# print(wordSpamRate)
 	print('++++++++++++++++++++++++++++++++++++++++++')
@@ -173,9 +174,16 @@ def main():
 			print('The folder '+SpamListOfTest+' does not exist')
 			continue
 
+		SpamListClas = []
+		with open(SpamListOfTest) as f:
+			lines = f.readlines()
+			for line in lines:
+				SpamListClas.append(line[:-1])
+		f.closed
+
 
 		print('Classifying folder '+test)
-		spamClassify(path+test, wordSpamRate, SpamListOfTest, PrS)
+		spamClassify(path+test, wordSpamRate, SpamListClas, PrS)
 
 
 

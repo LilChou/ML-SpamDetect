@@ -1,6 +1,4 @@
-Subject:
 Re: RedHat 8.0 and his own freetype
-Payload:
 Matthias Haase wrote:
 > RH ships the code with the bytecode hinter disabled which makes 
 > non-AA fonts really ugly.

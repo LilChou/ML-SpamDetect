@@ -1,6 +1,4 @@
-Subject:
 Re: alsa-driver rebuild fails with undeclared USB symbol
-Payload:
 I know this is simple but do you have /usr/src/linux and
 /usr/src/linux-2.4 symlinked to your kernel source directory?  Also is
 there a .config in /usr/src/yourkernelsource/.config  ?

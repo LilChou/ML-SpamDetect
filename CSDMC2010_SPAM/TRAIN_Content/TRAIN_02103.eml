@@ -1,6 +1,4 @@
-Subject:
 Postfix, SASL and LDAPDB
-Payload:
 Hey guys,
 
 I want to set up SASL authentication using LDAPDB, but it seems that

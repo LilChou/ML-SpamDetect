@@ -1,6 +1,4 @@
-Subject:
 [Spambayes] Current histograms
-Payload:
 We've not only reduced the f-p and f-n rates in my test runs, we've also
 made the score distributions substantially sharper.  This is bad news for
 Greg, because the non-existent "middle ground" is becoming even less

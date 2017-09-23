@@ -1,6 +1,4 @@
-Subject:
 Re: BadAtom X11 Error with fpGUI
-Payload:
 Please try starting X11.app first.  =46rom the console:
 
 open -a X11

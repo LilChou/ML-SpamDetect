@@ -1,6 +1,4 @@
-Subject:
 Re: ~/.xsession-errors file grows way too big
-Payload:
 On Wed, 19 May 2010 11:33:02 -0500, Boyd Stephen Smith Jr. wrote:
 
 >> I took a look, the reason and cure is very simple -- having X to trunk

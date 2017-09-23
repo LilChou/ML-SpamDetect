@@ -1,6 +1,4 @@
-Subject:
 Re: Re: Password messed up
-Payload:
 >   Coming in late to this thread, but if your K desktop is OK,
 > then you actually have this problem quite well isolated to something
 > in the KDM log-in process. It's not X, and it's not your desktop

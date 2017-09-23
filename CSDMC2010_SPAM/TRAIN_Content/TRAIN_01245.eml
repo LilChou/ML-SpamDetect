@@ -1,6 +1,4 @@
-Subject:
 Scripting gnome-panels
-Payload:
 I have a small bashscript which prepares a dual-monitor setup for my 
 laptop, since i'm moving in and out of the office and meetings, I tend 
 to attach and disconnect the monitor a few times a day.

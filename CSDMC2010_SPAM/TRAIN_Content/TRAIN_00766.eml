@@ -1,6 +1,4 @@
-Subject:
 Security update for Debian Testing - 2010-04-22
-Payload:
 This automatic mail gives an overview over security issues that were recently 
 fixed in Debian Testing. The majority of fixed packages migrate to testing 
 from unstable. If this would take too long, fixed packages are uploaded to the 

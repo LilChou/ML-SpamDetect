@@ -1,7 +1,5 @@
-Subject:
 [Spambayes] deleting "duplicate" spam before training?  good idea
 	orbad?
-Payload:
 On 09 September 2002, Tim Peters said:
 > > Would people be interested in the script?  I'd be happy to extricate
 > > it from my local modules and check it into CVS.

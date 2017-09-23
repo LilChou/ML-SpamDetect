@@ -1,6 +1,4 @@
-Subject:
 Why does /dev/rtc0 belong to group audio in Lenny but not in Sid?
-Payload:
 In Lenny, "ls -ld /dev/audio" gives
 
 > lenny:~$ ls -ld /dev/rtc0

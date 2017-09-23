@@ -1,6 +1,4 @@
-Subject:
 [Spambayes] Current histograms
-Payload:
 [Skip]
 > Hmmm.   How about you create empty Data/Ham/Set[12345], stuff all your
 > files into a Data/Ham/reservoir folder, then run the rebal.py script to

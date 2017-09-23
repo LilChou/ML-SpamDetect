@@ -1,7 +1,5 @@
-Subject:
 How does the Finder decide that two drives are on the same
 	partition?
-Payload:
 When I make two "local" disks via MacFuse and I try to eject one of them =
 the Finder insists on warning me that there are two drives on the same =
 partition, and giving me the option to unmount all of them or just the =

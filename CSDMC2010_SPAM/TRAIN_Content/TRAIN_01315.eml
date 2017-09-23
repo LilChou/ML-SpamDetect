@@ -1,6 +1,4 @@
-Subject:
 [ILUG] NFS slowness with SuSE 8.1
-Payload:
 NFS as a protocol is not known for its speediness but this is absurd. I did an 
 NFS install of a box this morning (that would be the box which won't boot 
 from CD for those who were in IRC) and it was rather slow but I just left it 

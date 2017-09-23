@@ -1,6 +1,4 @@
-Subject:
 Re: Problem with an rpm...
-Payload:
 Mark Derricutt wrote:
 > Never mind, there was some cron thing doing rpm -qf ???  seems fine now.
 > 

@@ -1,6 +1,4 @@
-Subject:
 [ILUG] Openssh FYI.
-Payload:
 http://docs.freebsd.org/cgi/getmsg.cgi?fetch=394609+0+current/freebsd-security
 
 sa.sin_family=AF_INET;

@@ -1,6 +1,4 @@
-Subject:
 apt-get problem ?
-Payload:
 When I try to use apt-get upgrade
 it wants to install libusb while I got it
 (same version)

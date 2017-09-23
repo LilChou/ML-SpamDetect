@@ -1,6 +1,4 @@
-Subject:
 Re: lenny-volatile updates for clamav-related packages
-Payload:
 
 
  As a Debian Maintainer, I can't upload to Volatile. The current Klamav from Testing should work fine if someone cares to upload it.

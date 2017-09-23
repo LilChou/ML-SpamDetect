@@ -1,6 +1,4 @@
-Subject:
 [Spambayes] Ditching WordInfo
-Payload:
 > > Maybe.  I batch messages using fetchmail (don't ask why), and adding
 > > .4 seconds per message for a batch of 50 (not untypical) feels like a
 > > real wait to me...

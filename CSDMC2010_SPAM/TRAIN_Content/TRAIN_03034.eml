@@ -1,6 +1,4 @@
-Subject:
 Re: scaled offscreen video rendering on Windows
-Payload:
 On 5/19/2010 10:50 AM, James Walker wrote:
 > I need to render a movie into a GWorld that may not be the movie's
 > natural size. When the movie is scaled up, say to double size, I see

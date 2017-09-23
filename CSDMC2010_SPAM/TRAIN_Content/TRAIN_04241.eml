@@ -1,7 +1,5 @@
-Subject:
 Re: Don't be too quick to assume that -XX:+UseCompressedOops is a
  good thing
-Payload:
 Can you post some details? I haven't done any serious benchmarking, but I haven't seen a scenario where something 'seemed' significantly slower, and in all cases I've tried (GUI applications and J2EE applications) the memory footprint was significantly smaller). I imagine a codebase that would not benefit much from compressed OOPs would be one relying primarily on manipulating primitive data types, but in that scenario I don't see how performance would be impacted. I'd love to see your data, and if anyone has some insight on the potential performance tradeoffs with compressed OOPs, please share!
 
 -- 

@@ -1,6 +1,4 @@
-Subject:
 Re: color problem
-Payload:
 This looks like a classic case of ARGB mixup.
 Have you ordered your bytes to paint "Alpha, Red, Green Blue"?
 

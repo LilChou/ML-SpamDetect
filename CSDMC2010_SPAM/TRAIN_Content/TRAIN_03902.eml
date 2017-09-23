@@ -1,6 +1,4 @@
-Subject:
 Re: 10.6 Update 2 crashing IDEA on pasting code
-Payload:
 Hi Guy,
                 The problem is caused by an NPE in the Swing =
 accessibility code when a JList subclass overrides the =

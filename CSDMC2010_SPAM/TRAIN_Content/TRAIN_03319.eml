@@ -1,6 +1,4 @@
-Subject:
 a deadlock problem
-Payload:
 Hi XFS developers,
 When studying xfs code(2.4.19), I found that the inode will be locked by 
 XFS_ILOCK_SHARE flags before we get acl, which may cause deadlock.

@@ -1,6 +1,4 @@
-Subject:
 Re: [ILUG] CVS question?
-Payload:
 Well, as many have said, it's non-trivial and not smart enough.
 
 I did try just cvs'ing over the existing sources, but cvs complained that my 

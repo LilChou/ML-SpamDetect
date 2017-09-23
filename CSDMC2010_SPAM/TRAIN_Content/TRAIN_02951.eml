@@ -1,6 +1,4 @@
-Subject:
 is there private MAC address space?
-Payload:
 For IP addresses there are 10.x.x.x , 192.168.x.x IP address that can
 be used for private networks. Is there something similar for MAC
 address of network cards that can be safely used with virtual

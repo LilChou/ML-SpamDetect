@@ -1,6 +1,4 @@
-Subject:
 Detecting a closed SSL connection
-Payload:
 I've written my Apple Push Notification client code in Java (on my =
 server). I open an SSL socket to Apple with a client-side cert, and push =
 a stream of bytes.

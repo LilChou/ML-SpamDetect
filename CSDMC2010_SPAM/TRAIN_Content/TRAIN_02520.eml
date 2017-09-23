@@ -1,6 +1,4 @@
-Subject:
 Re: Middle button click broken
-Payload:
 Just when you said that you "have the same", I thought this was the full setup, that is Gnome included. Anyway, it does not matter, I tried other window managers in the problematic machine, other user accounts too, and always strange behavior with the middle click. It seemed to be deeply rooted somewhere in the system. As a last resort, I rebooted the machine, and... problem solved!
 
 Should we reboot after updating X11?

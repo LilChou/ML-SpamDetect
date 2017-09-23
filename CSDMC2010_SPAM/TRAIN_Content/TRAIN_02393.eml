@@ -1,6 +1,4 @@
-Subject:
 Re: ntpdate cron error
-Payload:
 2010/5/13 David Baron <d_baron@012.net.il>:
 > The initial ntpdate run from /etc/init.d succeeds.
 >

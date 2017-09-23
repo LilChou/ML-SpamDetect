@@ -1,7 +1,5 @@
-Subject:
 How can I initialize a QTMovie object with certain attributes using
  writable data?
-Payload:
 Hello all,
 
 I'm trying to create an empty QTMovie object that I can add segments to, 

@@ -1,6 +1,4 @@
-Subject:
 Re: exmh bug?
-Payload:
 
 The way to debug something like this is to turn on the log (Preferences 
 -> Hacking Support -> Debug log enabled) and track the gpg commands 

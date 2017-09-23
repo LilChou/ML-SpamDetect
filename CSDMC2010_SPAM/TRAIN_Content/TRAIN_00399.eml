@@ -1,6 +1,4 @@
-Subject:
 Re: Dual Monitors Twin View on Nvidia
-Payload:
 One possible solution is using the "nvidia-settings"-Tool.
 You can configure your display-settings in a GUI and save it  
 permanently to an xorg file.

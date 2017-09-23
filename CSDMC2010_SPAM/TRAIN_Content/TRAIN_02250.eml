@@ -1,6 +1,4 @@
-Subject:
 Re: Problem with xquartz 2.5.0
-Payload:
 I have never seen this.  You'll have to provide more detail.  What is =
 the output of 'echo $DISPLAY' before launching nedit each time?
 

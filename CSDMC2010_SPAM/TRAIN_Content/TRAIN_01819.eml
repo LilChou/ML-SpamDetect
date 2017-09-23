@@ -1,6 +1,4 @@
-Subject:
 Re: [ILUG] Retrieving read mail from webmail.eircom.net via POP ?
-Payload:
 Seems fetchmail has a -a switch to get it all.
 
 Just need to install fetchmail now :)

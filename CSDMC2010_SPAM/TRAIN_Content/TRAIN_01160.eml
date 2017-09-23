@@ -1,6 +1,4 @@
-Subject:
 how to debug JNI in xcode
-Payload:
 Hi,
 
 I have a jni program that crashes, but don't know how to use xcode to debug it.

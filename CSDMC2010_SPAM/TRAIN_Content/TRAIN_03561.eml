@@ -1,6 +1,4 @@
-Subject:
 How do I get the mbr package to do its job quietly?
-Payload:
 I have been experimenting with the mbr package.  (mbr is a dependency for
 the lilo package; so if you have lilo installed you have mbr package installed
 too.)  I usually install lilo to the master boot record (boot=/dev/hda

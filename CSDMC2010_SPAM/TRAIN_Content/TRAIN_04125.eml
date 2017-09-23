@@ -1,6 +1,4 @@
-Subject:
 [Spambayes] understanding high false negative rate
-Payload:
 >   TP> I'm reading this now as that you trained on about 220 spam and
 >   TP> about 220 ham.  That's less than 10% of the sizes of the
 >   TP> training sets I've been using.  Please try an experiment: train

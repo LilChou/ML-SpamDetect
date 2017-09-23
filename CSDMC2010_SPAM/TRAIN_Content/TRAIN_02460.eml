@@ -1,7 +1,5 @@
-Subject:
 Re: FW: use of base image / delta image for automated recovery
     from attacks
-Payload:
 There is a software package that is used (or was up through w2k) 
 on MicroSloth for this purpose. Ghost, or some such. One essentially 
 "takes a picture" of the machine's proper config, and then upon 

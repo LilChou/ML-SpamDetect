@@ -1,6 +1,4 @@
-Subject:
 Re: [ILUG] adsl router modem combo
-Payload:
 It seems to only support PPPoA and not PPPoE. You need one that supports
 PPPoE, if you want torun it in routed IP mode. If you are using it as a
 bridge, it'll probably work, but you'd be left leaving the computer on,

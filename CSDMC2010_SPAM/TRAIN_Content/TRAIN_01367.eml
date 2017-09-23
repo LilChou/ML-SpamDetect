@@ -1,6 +1,4 @@
-Subject:
 Re: memory usage
-Payload:
 On 2010-05-11, Marcus Better <marcus@better.se> wrote:
 > The system will often grind to a halt for several minutes while iotop shows 
 > that it is busy swapping, usually swapping in the Eclipse process. The most 

@@ -1,6 +1,4 @@
-Subject:
 Native window not shown in JNI
-Payload:
 Hi,
 
 I've written a JNI OpenGL program, but the native OpenGL window isn't

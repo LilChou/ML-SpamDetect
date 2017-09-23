@@ -1,6 +1,4 @@
-Subject:
 Re: Java graphicsgeneration on Mac servers without graphics hardware
-Payload:
 Stuart Wier <wier@unavco.org> wrote:
 
 > It seems that Java on Mac OS X doesn't use X11 (or Xvfb) at all. Is it

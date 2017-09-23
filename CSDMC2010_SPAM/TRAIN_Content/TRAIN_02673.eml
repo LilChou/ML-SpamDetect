@@ -1,6 +1,4 @@
-Subject:
 Re: [SAtalk] Re: SA SQL Prefs and MIMEDefang
-Payload:
 > The main reason I'd like to stick with a milter-based approach is the 
 > ability to reject messages at the SMTP stage.  This way the recipient isn't 
 > bothered and the sender knows immediately that the message failed.  My 

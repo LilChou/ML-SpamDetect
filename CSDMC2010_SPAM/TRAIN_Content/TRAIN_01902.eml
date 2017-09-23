@@ -1,6 +1,4 @@
-Subject:
 Re: alsa-driver.spec tweak for homemade kernels ...
-Payload:
  >> > Well, I don't really find it consistent at all to use an rpm package
  >> > built against something that wasn't installed through rpm :-/
  >>

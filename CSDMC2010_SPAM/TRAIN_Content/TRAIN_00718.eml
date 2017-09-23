@@ -1,6 +1,4 @@
-Subject:
 Re: applets on 32-bit 1.6.0_20
-Payload:
 There is a known race condition between native background repainting and =
 Java drawing in the resize/scrolling case for Java applets embedded in =
 the browser process. The reason you don't see this behavior when using =

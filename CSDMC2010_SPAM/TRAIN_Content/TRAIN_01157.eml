@@ -1,6 +1,4 @@
-Subject:
 Re: Aptitude status output meaning
-Payload:
 On Friday 30 April 2010 16:44:52 Monique Y. Mudama wrote:
 > The "A" means that it was installed automatically due to a dependency,
 > so if all packages depending on it are uninstalled, it will

@@ -1,6 +1,4 @@
-Subject:
 Re: Java for Mac OS X 10.6 Update 2 and 10.5 Update 7 are live
-Payload:
 This update appears to have broken the SunPKCS11 provider... sort of.
 
 Attempting to use an alternate PKCS11 provider while the one while

@@ -1,6 +1,4 @@
-Subject:
 Re: [Razor-users] Problem with Razor 2.14 and Spamassassin 2.41
-Payload:
 On Thu, Sep 05, 2002 at 10:12:59PM -0400, Leland Woodbury wrote:
 > I found a nice little Perl script for this purpose called rotate, which 
 > makes the process of rotating log files very simple.  If there's an 

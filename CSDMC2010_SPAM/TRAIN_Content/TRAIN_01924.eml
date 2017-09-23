@@ -1,6 +1,4 @@
-Subject:
 Re: KDE 4.4.3 upgrade eats 141 MB of /home
-Payload:
 On Wed, May 12, 2010 at 10:48:43AM +0200, Richard Hartmann wrote:
 
 > > - Disable "kres-migrator".  Or at least add a debconf option to

@@ -1,6 +1,4 @@
-Subject:
 [Razor-users] Preproc erasing message
-Payload:
 The following razor debugging sequence show my mail going from 9295 bytes to
 0 bytes after the preproc runs, which gives me an exit code that is not 0.
 I included the message below.

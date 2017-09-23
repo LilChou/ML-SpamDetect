@@ -1,6 +1,4 @@
-Subject:
 HELLO $NAME
-Payload:
 Return-Path: <CashByNet@webmillion.com>
 Received: from [216.35.187.6] (HELO webmillion.com)
   by mx12.cluster1.charter.net (CommuniGate Pro SMTP 3.5.9)

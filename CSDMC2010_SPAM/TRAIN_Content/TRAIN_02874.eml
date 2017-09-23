@@ -1,6 +1,4 @@
-Subject:
 ICMDecompressionSessionDecodeFrame() is not working
-Payload:
 Hi All,
 
 I am stuck in the quicktime API ICMDecompressionSessionDecodeFrame()

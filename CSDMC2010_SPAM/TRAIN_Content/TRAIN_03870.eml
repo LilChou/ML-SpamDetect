@@ -1,6 +1,4 @@
-Subject:
 [ILUG] VPN implementation
-Payload:
 I need to setup a VPN between a few sites. From what I've read, the the
 choices come down (on the Linux side) to IPsec (using FreeSWAN) or CIPE.
 It seems that FreeSWAN is 'better', being an implementation of IPsec which

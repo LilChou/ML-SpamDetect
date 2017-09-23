@@ -1,6 +1,4 @@
-Subject:
 Is it possible to login as root with GDM3?
-Payload:
 I've just replaced gdm with gdm3 and find that it doesn't seem to be
 possible to login as root any more. Does anyone know if this can be
 enabled?

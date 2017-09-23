@@ -1,7 +1,5 @@
-Subject:
 Re: ldconfig: /usr/lib/libwins.so is not an ELF file - it has the
  wrong magic bytes at the start
-Payload:
 On Mon, 26 Apr 2010 14:40:30 +0200, Merciadri Luca wrote:
 
 > Camaleón wrote:

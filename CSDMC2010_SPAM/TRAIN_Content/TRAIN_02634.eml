@@ -1,6 +1,4 @@
-Subject:
 sharing NFS folder in multiples servers
-Payload:
 Hi again:
 
 I have a big NFS partition shared and mounted on 3 debian serves

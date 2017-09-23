@@ -1,6 +1,4 @@
-Subject:
 How to flush cache of certain disk?
-Payload:
 Hi,
 
 On my netbook I'm using automatic USB sticks mount through udev rules,

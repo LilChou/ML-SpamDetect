@@ -1,6 +1,4 @@
-Subject:
 xine cannot play DVDs - "liba52: a52_block error"
-Payload:
 Since libdvdcss-1.2.0, I have been unable to play DVDs using ogle, xine,
 vlc, or mplayer.  They all show a scrambled picture with (VERY) choppy
 audio.  When I run xine I see tons of these in the console: 

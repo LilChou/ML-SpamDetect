@@ -1,6 +1,4 @@
-Subject:
 [NOVICE] pl/pgsql and returns timestamp type
-Payload:
 Hi all,
 
 I cannot to get this to run...  I think I am mistaking some basic concept or I have a big brain-lock .  Somebody know what is the problem to execute this function ?

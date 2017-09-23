@@ -1,6 +1,4 @@
-Subject:
 Re: Xorg and cpu usage
-Payload:
 Concerning Xorg, look through the log file /var/log/Xorg.0.log, e.g.,
 the command
 

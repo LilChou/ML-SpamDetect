@@ -1,6 +1,4 @@
-Subject:
 Re: [ILUG] Re: removing lilo
-Payload:
 
 "fdisk /mbr" will not destroy the OS, it will simply restore the windows
 mbr as it was.  Running fdisk and deleting a partition would however
