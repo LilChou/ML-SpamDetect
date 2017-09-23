@@ -116,7 +116,7 @@ def SumBOW(filenames, folder):
 ############################# main func starts here ################################
 def main():
 	#----------------- Get Train Folder ---------------------
-	path = '../CSDMC2010_SPAM/'
+	path = '../ML_SpamSets/'
 	folder = input("The training folder: ")
 	folder = path + folder
 	if not os.path.exists(folder):
@@ -171,7 +171,7 @@ def main():
 			continue
 		SpamListOfTest = input("The Spamlist of the test case: ")
 		if not os.path.exists(SpamListOfTest):
-			print('The folder '+SpamListOfTest+' does not exist')
+			print('The file '+SpamListOfTest+' does not exist')
 			continue
 
 		SpamListClas = []
