@@ -44,7 +44,7 @@ def ExtractSubPayload (filename):
 		#print('###########################################')
 #-------------------------------------------
 	
-	return "Subject:\n" + sub + "\nPayload:\n" + payload
+	return sub + "\n" + payload
 
 def ExtractBodyFromDir ( srcdir, dstdir ):
 	'''Extract the body information from all .eml files in the srcdir and 
