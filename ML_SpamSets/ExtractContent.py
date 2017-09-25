@@ -7,6 +7,9 @@
 import email.parser 
 import os, sys, stat
 import shutil
+#-------------------------------------------
+import re
+#-------------------------------------------
 
 def ExtractSubPayload (filename):
 	''' Extract the subject and payload from the .eml file.
@@ -24,8 +27,46 @@ def ExtractSubPayload (filename):
 	sub = str(sub)
 	if type(payload) != type('') :
 		payload = str(payload)
+#-------------------------------------------
+	payload = payload.lower()
+	start = 0
+
+	if payload.find('<head>') >=0:
+		# print("Found HEAD")
+		# print(filename)
+		start = payload.find('<head>')
+		end = payload.find('</head>')
+		payload = payload[:start] + payload[(end+7):]
 	
-	return sub + payload
+	payload = re.sub(r'https?:\/\/.*[\s]*', '', payload, 0, flags=re.MULTILINE)
+	payload = re.sub(r'http?:\/\/.*[\s]*', '', payload, 0, flags=re.MULTILINE)
+	payload = re.sub(r'<.*?>', '', payload, 0, flags=re.MULTILINE)
+	
+	if payload.find('Content-Type', 0) >= 0:
+		if payload.find('Content-Transfer-Encoding', 0) >= 0:
+			start = payload.find('Content-Transfer-Encoding', 0)
+		start = payload.find('\n\n', start)
+	payload = payload[start:]
+
+	start = 0
+	while payload.find('<', start) >= 0:
+		start = payload.find('<', start)+1
+		end = payload.find('>', start)
+		if end != -1:
+			payload = payload[:(start-1)] + payload[(end+1):]
+		else: break
+	# while payload.find('{', start) >= 0:
+	# 	start = payload.find('{', start)+1
+	# 	end = payload.find('}', start)
+	# 	if end != -1:
+	# 		payload = payload[:(start-1)] + payload[(end+1):]
+	# 	else: break
+	
+	payload = re.sub(r'>', '', payload, 0, flags=re.MULTILINE)
+	# cleanr = re.compile('<.*?>')
+	# payload = re.sub(cleanr, '', payload)
+#-------------------------------------------
+	return sub.lower() + "\n" + payload.lower()
 
 def ExtractBodyFromDir ( srcdir, dstdir ):
 	'''Extract the body information from all .eml files in the srcdir and 

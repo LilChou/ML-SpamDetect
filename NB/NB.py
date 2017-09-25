@@ -1,196 +1,195 @@
-import os               #get the file from "path"
-import codecs           #open files with different encoding
-import collections, re  #implement bag of words
-import operator         #sort dictionary
-import sys
+import os
+import collections
+import re
 
-def spamClassify(path, wordSpamRate, SpamList, PrS):
-	filenames = os.listdir(path)
-	n=0		#calculate num of files
-	dspam=0		#calculate num of detected spam
-	TP, FP, TN, FN = 0, 0, 0, 0
-	for filename in filenames:
-		pspam, pham = 1, 1
-		dic = getBOW(filename, path)
-		for key in dic:
-			if key in wordSpamRate and wordSpamRate[key]!=1:
-				# print("key="+str(key)+" SpamRate: "+str(wordSpamRate[key]))
-				pspam *= dic[key]*wordSpamRate[key]
-				pham *= dic[key]*(1-wordSpamRate[key])
-		if pspam > pham:
-			# print("Spam")
-			if filename in SpamList:
-				TP += 1
-			else:
-				FP += 1
-			dspam += 1
-		else:
-			# print("Ham")
-			if filename in SpamList:
-				FN += 1
-			else:
-				TN += 1
+stopword = [
+	'of',
+	'a','an',
+	'for',
+	'by',
+	'with',
+	'and',
+	'in','out',
+	'the',
+	'as',
+	'about',
+	'to',
+	'up',
+	'on','at',
+]
 
-		# print("pspam: "+str(pspam)+"\npham: "+str(pham))
-		n += 1
-
-	print('True Positive: '+str(TP))
-	print('False Positive: '+str(FP))
-	print('True Negative: '+str(TN))
-	print('False Negative: '+str(FN))
+def evaluation(TP, FP, TN, FN):
+	print('-----------------------------------------------------')
+	print('True Positive: '+str(TP)+'\tFalse Positive: '+str(FP))
+	print('True Negative: '+str(TN)+'\tFalse Negative: '+str(FN))
 	print()
-	print('False Positive Rate: '+str(FP/n))
-	print('False Negative Rate: '+str(FN/n))
+	if (FP+TN) != 0:
+		FPR = FP/(FP+TN)
+		print('False Positive Rate: '+str(round(FPR, 4)))
+	else:
+		print("The Division of False Positive Rate is zero!!")
+
+	if (FN+TP) != 0:
+		FNR = FN/(FN+TP)
+		print('False Negative Rate: '+str(round(FNR, 4)))
+	else:
+		print("The Division of Talse Negative Rate is zero!!")
+
 	if (TP+FN) != 0:
 		RC = TP/(TP+FN)
-		print('Recall: '+str(RC))
+		print('Recall: '+str(round(RC, 4)))
 	else:
 		print('Recall: The Division of Recall is zero!!')
 		RC = 0
 
 	if (TP+FP) != 0:
 		PC = TP/(TP+FP)
-		print('Precision: '+str(PC))
+		print('Precision: '+str(round(PC, 4)))
 	else:
 		print('Precision: The Division of Precision is zero!!')
 		PC = 0
 
 	if (PC+RC) != 0:
 		FS = 2*PC*RC/(PC+RC)
-		print('F-Score: '+str(FS))
+		print('F-Score: '+str(round(FS, 4)))
 	else:
 		print('F-Score: The Divisioni of F-Score is zero!!')
-	# return 
+	print('-----------------------------------------------------')
+
+
+def classify(path, PrWS, PrWH, SpmLst, PS):
+	filenames = os.listdir(path)
+	TP, FP, TN, FN = 0, 0, 0, 0
+	for file in filenames:
+		PSpam, PHam = 1, 1
+		with open(path+'/'+file, "r", encoding='utf-8', errors='ignore') as f:
+			lines = f.readlines()
+			bagofwords = [ collections.Counter(re.findall(r'[a-zA-Z_]+', txt)) for txt in lines]
+			dic = dict(sum(bagofwords, collections.Counter()))
+			for word in dic:
+				if word in stopword:
+					continue
+				if word not in PrWS:
+					continue
+				PSpam *= PrWS[word]
+				PHam *= PrWH[word]
+			PSpam *= PS
+			PHam *= (1-PS)
+			if PSpam>PHam:
+				if file in SpmLst:
+					TP += 1
+				else:
+					FP += 1
+			else:
+				if file in SpmLst:
+					FN += 1
+				else:
+					TN += 1
+	evaluation(TP, FP, TN, FN)
+
+#return a dictionary of (word: spamrate)
+def getWordSpamRate(path, trainSpmLst, numtrainSpm, numtrainHam):
+	TrainSetFileNames = os.listdir(path)
+	spamDic={}	#Each word appears in how many spam files
+	totalDic={}	#Each word appears in how many files
+	i=0
+	################### Calculate spamDic & totalDic #################
+	for file in TrainSetFileNames:
+		dic = {}
+		with open(path+'/'+file, "r", encoding='utf-8', errors='ignore') as f:
+			lines = f.readlines()
+			bagofwords = [ collections.Counter(re.findall(r'[a-zA-Z_]+', txt)) for txt in lines]
+			dic = dict(sum(bagofwords, collections.Counter()))
+			# print(dic)
+
+			if file in trainSpmLst:	spm = 1
+			else:	spm = 0
+			for word in dic:
+				if word in totalDic:
+					totalDic[word] += 1
+				else:
+					totalDic[word] = 1
+				if spm:
+					if word in spamDic:
+						spamDic[word] += 1
+					else:
+						spamDic[word] = 1
+		f.closed
+		i += 1
+		
+		# if i == 4: break
 	
+	############ Calculate each word's pr(W|S) & pr(W|H) #############
+	PrWS={}
+	PrWH={}
+	p = len(totalDic)
+	mspam, mham = 0, 0
+	for word in totalDic:
+		if (word in spamDic) and (totalDic[word] != spamDic[word]):
+			#Word in both spam and ham
+			PrWS[word] = round(spamDic[word]/numtrainSpm, 4)
+			PrWH[word] = round((totalDic[word]-spamDic[word])/numtrainHam, 4)
+		elif (word in spamDic) and (totalDic[word] == spamDic[word]):
+			#All in spam, m estimate for ham
+			PrWS[word] = round(spamDic[word]/numtrainSpm, 4)
+			PrWH[word] = round((1/2)/(numtrainHam+1), 4)
+		else:
+			#All in ham, m estimate for spam
+			PrWS[word] = round((1/2)/(numtrainSpm+1), 4)
+			PrWH[word] = round(totalDic[word]/numtrainHam, 4)
+	##################################################################
 
-
-def writeInFile(objs, file):
-	with open(file, 'w') as f:
-		f.write("{")
-		for key in objs:
-			f.write(" '"+key+"': "+str(objs[key])+",")
-		f.write("}")
+	############# write it to a file so it will be faster ############
+	with open('wordSpamHamRate.txt', 'w') as f:
+		for word in totalDic:
+			f.write(str(PrWS[word])+"\t"+str(PrWH[word])+"\t"+word+"\n")
 	f.closed
+	##################################################################
 
-def spamRate(BOW, SpamBOW):
-	SpamRate={}
-	for key in BOW:
-		if key in SpamBOW:
-			SpamRate[key] = SpamBOW[key]/BOW[key]
-	return SpamRate
+	return PrWS, PrWH
 
-#list of tuples to dictionary
-def list2Dict(lList):
-	BOW = {}
-	for ttuple in lList:
-		BOW[ttuple[0]] = ttuple[1]
-	return BOW
-
-def getSpamRate():
-	BOW = getFrequency(sys.argv[1])
-	SpamBOW = getFrequency(sys.argv[2])
-	# print(BOW)
-	wordSpamRate = spamRate(BOW, SpamBOW)
-	print(wordSpamRate)
-	writeInFile(wordSpamRate, sys.argv[3])
-	print('++++++++++++++++++++++++++++++++++++++++++')
-
-def getBOW(filename, folder):
-	dic = {}
-	with codecs.open(folder+"/"+filename, "r",encoding='utf-8', errors='ignore') as f:
-		lines = f.readlines()
-		#get the bag of words from every line
-		bagofwords = [ collections.Counter(re.findall(r'[a-zA-Z_]+', txt)) for txt in lines]
-		#Sum bag of words of the file
-		dic = sum(bagofwords, collections.Counter())	
-	f.closed
-	return dic
-
-def SumBOW(filenames, folder):
-	BOW = []
-	for filename in filenames:
-		BOW.append(getBOW(filename, folder))
-	BOW = sorted(dict(sum(BOW, collections.Counter())).items(), key=operator.itemgetter(1), reverse=True)
-	return BOW
-
-############################# main func starts here ################################
 def main():
-	#----------------- Get Train Folder ---------------------
 	path = '../ML_SpamSets/'
-	folder = input("The training folder: ")
-	folder = path + folder
-	if not os.path.exists(folder):
-		print('The training folder '+folder+' does not exist, exit...')
-		sys.exit()
-	#get filenames in TRAINING Set
-	TrainSetFileNames = os.listdir(folder)
-
-
-	#----------------- Get Spam Folder ---------------------
-	SpamListFile = input("The SpamList of the folder: ")
-	if not os.path.exists(SpamListFile):
-		print('The SpamList '+SpamListFile+' does not exist, exit...')
-		sys.exit()
-	#get Spam filenames in SpamListFile
-	SpamList = []
-	with open(SpamListFile) as f:
+	trainFolder = 'Tr'
+	testFolder = 'Te'
+	TrainSetFileNames = os.listdir(path + trainFolder)
+	TestSetFileNames = os.listdir(path + testFolder)
+	################## Build Spm Lst for Train&Test ##################
+	trainSpmLst, numtrainSpm = [], 0
+	testSpmLst, numtestSpm = [], 0
+	with open("../ML_SpamSets/SPAM.label") as f:
 		lines = f.readlines()
 		for line in lines:
-			SpamList.append(line[:-1])
+			items = line.split()
+			if items[0] is '0':
+				if items[1].find('TRAIN', 0) != -1:
+					trainSpmLst.append(items[1])
+					numtrainSpm += 1
+				elif items[1].find('TEST', 0) != -1:
+					testSpmLst.append(items[1])
+					numtestSpm += 1
 	f.closed
-	print("Fininsh getting filelists")
-	PrS=len(SpamList)/len(TrainSetFileNames)
+	##################################################################
 
-
-
-	TrainBOW = list2Dict(SumBOW(TrainSetFileNames, folder))
-	print("Fininsh getting TrainBOW")
-
-	SpamBOW = list2Dict(SumBOW(SpamList, folder))
-	print("Fininsh getting BOW")
-
-	wordSpamRate = spamRate(TrainBOW, SpamBOW)
-	print("Finish getting wordSpamRate")
-
-
-	print('++++++++++++++++++++++++++++++++++++++++++')
-	# print(TrainSetFileNames)
-	# print(SpamList)
-	# print(type(SpamList))
-	# print(SpamBOW)
-	# print(wordSpamRate)
-	print('++++++++++++++++++++++++++++++++++++++++++')
-
-
-	while(1):
-		test=input("\n\nTest a folder of emails( or 'exit' ): ")
-		if test == 'exit':
-			break
-		if not os.path.exists(path+test):
-			print('The folder '+path+test+' does not exist')
-			continue
-		SpamListOfTest = input("The Spamlist of the test case: ")
-		if not os.path.exists(SpamListOfTest):
-			print('The file '+SpamListOfTest+' does not exist')
-			continue
-
-		SpamListClas = []
-		with open(SpamListOfTest) as f:
-			lines = f.readlines()
-			for line in lines:
-				SpamListClas.append(line[:-1])
-		f.closed
-
-
-		print('Classifying folder '+test)
-		spamClassify(path+test, wordSpamRate, SpamListClas, PrS)
-
-
-
-
-#############################  main func ends here  ################################
-
+	########## Return two dictionary of (word: spamrate) #############
+	# PrWS, PrWH = getWordSpamRate(path+trainFolder, trainSpmLst, numtrainSpm, (len(TrainSetFileNames)-numtrainSpm))
+	
+	PrWS, PrWH = {}, {}
+	with open("wordSpamHamRate.txt") as f:
+		lines = f.readlines()
+		for line in lines:
+			items = line.split()
+			PrWS[items[2]] = float(items[0])
+			PrWH[items[2]] = float(items[1])
+	f.closed
+	##################################################################
+	print("Classify Training Set")
+	classify(path+trainFolder, PrWS, PrWH, trainSpmLst, (numtrainSpm/len(TrainSetFileNames)))
+	print("Classify Testing Set")
+	classify(path+testFolder, PrWS, PrWH, testSpmLst, (numtestSpm/len(TestSetFileNames)))
+	print("########################## ALL DONE ##########################")
 main()
+
 
 
 
