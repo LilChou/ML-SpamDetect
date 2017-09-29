@@ -63,6 +63,7 @@ def evaluation(TP, FP, TN, FN):
 def classify(clf, path, TotalWordList, SpmLst):
 	filenames = os.listdir(path)
 	TP, FP, TN, FN = 0, 0, 0, 0
+	ClassifiedList=[]
 	for filename in filenames:
 		lst=[]
 		with open(path+'/'+filename, "r", encoding='utf-8', errors='ignore') as f:
@@ -75,18 +76,28 @@ def classify(clf, path, TotalWordList, SpmLst):
 				else:
 					lst.append("0")
 			if clf.predict([lst])[0] == '0':
+				ClassifiedList.append(0)
 				if filename in SpmLst:
 					TP += 1
 				else:
 					FP += 1
-			elif clf.predict([lst])[0] == '1':
+			else:
+				ClassifiedList.append(1)
 				if filename in SpmLst:
 					FN += 1
 				else:
 					TN += 1
-			else:
-				print(filename+" GOT THIS clf: "+ clf.predict([lst])[0])
-	evaluation(TP, FP, TN, FN)
+		f.closed
+	dstdir = input("Enter a file to save the result\n or enter '0' for not saving into a file: ")
+	if dstdir != '0':
+		i=0
+		with open(dstdir, 'w+') as f:
+			for file in filenames:
+				f.write(str(ClassifiedList[i])+' '+file+'\n')
+				i += 1
+	eva = input("Do you want to evaluate the performance?\n Only if the emails are in SPAM.label\n '1' for yes or '0' for no: ")
+	if eva == '1':
+		evaluation(TP, FP, TN, FN)
 
 
 def getWordExist(path, stopword):
@@ -151,7 +162,7 @@ def main():
 	TrainSetFileNames = os.listdir(trainFolder)
 
 	############################## Get Spam label ##################################
-	spamLabel = input("Please enter spam label file\n(contains both and only train & test spams): ")
+	spamLabel = input("Please enter a spam label file\n(contains both and only train & test spams): ")
 	checkFileExist(spamLabel)
 
 	######################### Build Spm Lst for Train&Test #########################

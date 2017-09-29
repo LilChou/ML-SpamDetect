@@ -2,6 +2,7 @@ import os
 import sys
 import collections
 import re
+import math
 
 stopword = [
 	'of',
@@ -60,8 +61,9 @@ def evaluation(TP, FP, TN, FN):
 def classify(path, PrWS, PrWH, SpmLst, PS):
 	filenames = os.listdir(path)
 	TP, FP, TN, FN = 0, 0, 0, 0
+	ClassifiedList=[]
 	for file in filenames:
-		PSpam, PHam = 1, 1
+		PSpam, PHam = 0, 0
 		with open(path+'/'+file, "r", encoding='utf-8', errors='ignore') as f:
 			lines = f.readlines()
 			bagofwords = [ collections.Counter(re.findall(r'[a-zA-Z_]+', txt)) for txt in lines]
@@ -71,22 +73,33 @@ def classify(path, PrWS, PrWH, SpmLst, PS):
 					continue
 				if word not in PrWS:
 					continue
-				PSpam *= PrWS[word]
-				PHam *= PrWH[word]
-			PSpam *= PS
-			PHam *= (1-PS)
+				PSpam += math.log(PrWS[word])
+				PHam += math.log(PrWH[word])
+			PSpam += math.log(PS)
+			PHam += math.log((1-PS))
 			if PSpam>PHam:
+				ClassifiedList.append(0)
 				if file in SpmLst:
 					TP += 1
 				else:
 					FP += 1
 			else:
+				ClassifiedList.append(1)
 				if file in SpmLst:
 					FN += 1
 				else:
 					TN += 1
 		f.closed
-	evaluation(TP, FP, TN, FN)
+	dstdir = input("Enter a file to save the result\n or enter '0' for not saving into a file: ")
+	if dstdir != '0':
+		i=0
+		with open(dstdir, 'w+') as f:
+			for file in filenames:
+				f.write(str(ClassifiedList[i])+' '+file+'\n')
+				i += 1
+	eva = input("Do you want to evaluate the performance?\n Only if the emails are in SPAM.label\n '1' for yes or '0' for no: ")
+	if eva == '1':
+		evaluation(TP, FP, TN, FN)
 
 #return a dictionary of (word: spamrate)
 def getWordSpamRate(path, trainSpmLst, numtrainSpm, numtrainHam):
@@ -121,7 +134,11 @@ def getWordSpamRate(path, trainSpmLst, numtrainSpm, numtrainHam):
 	i, j=0, 0
 	deleteList=[]
 	for word in totalDic:
-		if totalDic[word] < 50:
+		if totalDic[word] < int(0.005*len(TrainSetFileNames)+10):
+			deleteList.append(word)
+			j+=1
+			continue
+		if word in stopword:
 			deleteList.append(word)
 			j+=1
 			continue
@@ -137,19 +154,44 @@ def getWordSpamRate(path, trainSpmLst, numtrainSpm, numtrainHam):
 	PrWH={}
 	p = len(totalDic)
 	mspam, mham = 0, 0
+	i, j=0, 0
+	deleteList=[]
 	for word in totalDic:
 		if (word in spamDic) and (totalDic[word] != spamDic[word]):
 			#Word in both spam and ham
-			PrWS[word] = round(spamDic[word]/numtrainSpm, 4)
+			t = round(spamDic[word]/numtrainSpm, 4)
+			if (t>0.3) and (t<0.7):
+				deleteList.append(word)
+				j+=1
+				continue
+			PrWS[word] = t
 			PrWH[word] = round((totalDic[word]-spamDic[word])/numtrainHam, 4)
+			i+=1
 		elif (word in spamDic) and (totalDic[word] == spamDic[word]):
 			#All in spam, m estimate for ham
-			PrWS[word] = round(spamDic[word]/numtrainSpm, 4)
+			t = round(spamDic[word]/numtrainSpm, 4)
+			if (t>0.3) and (t<0.7):
+				deleteList.append(word)
+				j+=1
+				continue
+			PrWS[word] = t
 			PrWH[word] = round((1/2)/(numtrainHam+1), 4)
+			i+=1
 		else:
 			#All in ham, m estimate for spam
-			PrWS[word] = round((1/2)/(numtrainSpm+1), 4)
+			t = round((1/2)/(numtrainSpm+1), 4)
+			if (t>0.3) and (t<0.7):
+				deleteList.append(word)
+				j+=1
+				continue
+			PrWS[word] = t
 			PrWH[word] = round(totalDic[word]/numtrainHam, 4)
+			i+=1
+	for word in deleteList:
+		del totalDic[word]
+	deleteList=[]
+	print('done deleting for useless pr')	
+	
 	##################################################################
 
 	############# write it to a file so it will be faster ############
@@ -174,7 +216,7 @@ def main():
 	TrainSetFileNames = os.listdir(trainFolder)
 
 	############################## Get Spam label ##################################
-	spamLabel = input("Please enter spam label file\n(contains both and only train & test spams): ")
+	spamLabel = input("Please enter a spam label file\n(contains both and only train & test spams): ")
 	checkFileExist(spamLabel)
 
 	######################### Build Spm Lst for Train&Test #########################
