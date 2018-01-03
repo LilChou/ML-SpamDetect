@@ -1,3 +1,8 @@
+This data comes from CSDMC2010 SPAM corpus, which is one of the datasets for the data mining
+competition associated with ICONIP 2010.
+
+------------------------------------------------------
+
 Welcome to the CSDMC2010 SPAM corpus, which is one of the datasets for 
 the data mining competition associated with ICONIP 2010.
 
