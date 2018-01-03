@@ -2,6 +2,16 @@ This data comes from CSDMC2010 SPAM corpus, which is one of the datasets for the
 competition associated with ICONIP 2010.
 
 ------------------------------------------------------
+The corpus file -- CSDMC2010_SPAM.tar.bz2 
+
+On Linux platforms, it can be extracted by command 
+tar -xjf CSDMC2010_SPAM.tar.bz2 -C email/
+
+In an MS Windows environment, use the bzip2 software
+http://gnuwin32.sourceforge.net/packages/bzip2.htm
+
+
+------------------------------------------------------
 
 Welcome to the CSDMC2010 SPAM corpus, which is one of the datasets for 
 the data mining competition associated with ICONIP 2010.
@@ -25,15 +35,6 @@ Pertinent points
     after the competion.
 
   - Copyright for the text in the messages remains with the original senders.
-
-------------------------------------------------------
-The corpus file -- CSDMC2010_SPAM.tar.bz2 
-
-On Linux platforms, it can be extracted by command 
-tar -xjf CSDMC2010_SPAM.tar.bz2 -C email/
-
-In an MS Windows environment, use the bzip2 software
-http://gnuwin32.sourceforge.net/packages/bzip2.htm
 
 
 ------------------------------------------------------
